@@ -1,0 +1,8 @@
+FROM kennethreitz/pipenv
+
+# Bundle app source into Docker image
+#ADD . /app/
+
+CMD [ "python", "./newcoinscanner.py" ]
+
+VOLUME [ "/app" ]
